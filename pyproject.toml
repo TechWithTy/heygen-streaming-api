@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heygen-streaming"
+version = "0.1.0"
+description = "HeyGen Streaming API client"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+dependencies = [
+    "httpx>=0.24.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-mock>=3.10.0",
+    "pytest-cov>=4.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["heygen_streaming*"]
+
+[tool.pytest.ini_options]
+testpaths = ["_tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
+python_classes = "Test*"
+addopts = "-v -s --asyncio-mode=auto"
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/heygen-streaming"
+"Bug Tracker" = "https://github.com/yourusername/heygen-streaming/issues"
