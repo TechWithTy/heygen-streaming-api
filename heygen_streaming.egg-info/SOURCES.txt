@@ -1,8 +1,0 @@
-README.md
-pyproject.toml
-setup.py
-heygen_streaming.egg-info/PKG-INFO
-heygen_streaming.egg-info/SOURCES.txt
-heygen_streaming.egg-info/dependency_links.txt
-heygen_streaming.egg-info/requires.txt
-heygen_streaming.egg-info/top_level.txt
